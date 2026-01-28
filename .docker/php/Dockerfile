@@ -61,7 +61,7 @@ RUN set -eux; \
     if php -m | grep -qi xdebug; then \
         { \
             echo 'zend_extension=xdebug'; \
-            echo 'xdebug.mode=develop,debug'; \
+            echo 'xdebug.mode=develop,debug,coverage'; \
             echo 'xdebug.start_with_request=trigger'; \
             echo 'xdebug.client_port=9003'; \
             echo 'xdebug.idekey=PHPSTORM'; \
